@@ -50,8 +50,10 @@ void longestString(char word[][20], int n) {
         len = strlen(word[i]);
         
         if (len > longest)
+        {
             j = i;
             longest = len;
+        }
     }
     
     printf("\nThe longest word is \"%s\"\n\n", word[j]);
